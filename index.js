@@ -10,13 +10,7 @@
     1)  Declare and initialize an array of `assignments` with `name` and `completed` properties. Name the array `assignments`.  `completed` will have boolean values.
 
  */
-const assignments = [
-    {name: 'The Perfect Lineup', completed: false},
-    {name: 'Hazy Calculator', completed: true},
-    {name: 'Password Validator', completed: true}
-]
 
-console.log(assignments)
 
  /**
 
@@ -30,7 +24,7 @@ console.log(assignments)
 
   */
 
-
+const assignmentsImport = require('./data/assignments.js')
 /**
 
     Looping and using references to arrays a given positions
