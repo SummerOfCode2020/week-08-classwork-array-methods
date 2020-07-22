@@ -11,36 +11,27 @@ a) code in git, start working. first step: 'git checkout - b answer'
 
  */
 
- let assignments = [{
-     name: 'One is the loneliest number',
-     completed: true
- },
-{
-    name: 'Two can be as bad as one',
-    completed: false
-},
-{
-    name: 'Three Dog Nights',
-    completed: true
-}]
-
- /**
-
-    Referencing code in other files
- 
-    2a)  Great work! Now move that array initialization out into its own file. 
-        See ./data/assignments.js where you will initialize the data in place of inline in this function
-
-    2b) "Import" that data into this file in place of the inline code you had in step 1
-    
-
-  */
+// let and const could both be ok here if we are not sure yet about changes
+// 'const' makes sure you don't change a var you don't expet to
 
 
 /**
 
-    Looping and using references to arrays a given positions
+   Referencing code in other files
  
+   2a)  Great work! Now move that array initialization out into its own file. 
+       See ./data/assignments.js where you will initialize the data in place of inline in this function
+
+   2b) "Import" that data into this file in place of the inline code you had in step 1
+   
+
+ */
+const { assignments } = require('./data/assignments')
+
+/**
+
+    Looping and using references to arrays a given positions
+
     3) Loop through the data using a for loop. Just console.log within the loop to show each item within the array
 
  */
@@ -48,7 +39,7 @@ a) code in git, start working. first step: 'git checkout - b answer'
 /**
 
     Looping and Assignment
- 
+
     4) Declare a new array named `allAssignments`. Loop through the `assignments` array data using a for loop and assign each item from `assignments` to the new `allAssignments` array
 
  */
@@ -57,7 +48,7 @@ a) code in git, start working. first step: 'git checkout - b answer'
 /**
 
     Filtering
- 
+
     5) Declare a new array named `completedAssignments`. Loop through the `assignments` array data using a for loop.  Use a condition to only add to `allAssignments` where there are property values with `completed` of `true`
 
  */
