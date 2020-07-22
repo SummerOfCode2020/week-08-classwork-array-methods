@@ -5,6 +5,9 @@ const assignments = [
 ]
 
 function assignmentsImport(assignments) {
+    assignments.forEach(function (assignment) {
+        console.log({ assignment })
+    })
     return assignments
 }
 console.log(assignmentsImport(assignments))
