@@ -1,0 +1,1 @@
+const {assignments} = require('./index');
