@@ -62,4 +62,10 @@
 
  */
 
+ let completedAssignments = []
+ for (let i = 0; i < assignments.length; i++) {
+     if (assignments[i].completed === true) {
+         completedAssignments.push(assignments[i])
+     }}
 
+     console.log(completedAssignments)
