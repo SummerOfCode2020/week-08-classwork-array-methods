@@ -7,8 +7,20 @@
     1)  Declare and initialize an array of `assignments` with `name` and `completed` properties. Name the array `assignments`.  `completed` will have boolean values.
 
  */
-
-
+let assignments = [
+    {
+    name: 'week 01',
+    completed: true,
+    }, 
+    {
+    name: 'week 02',
+    completed: true,
+    },
+    {
+    name: 'week 03',
+    completed: false,
+    },
+]   
  /**
 
     Referencing code in other files
