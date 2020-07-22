@@ -8,18 +8,28 @@
 
  */
 
+let assignments = [{
+        name: 'Week 8 Homework',
+        completed: false
+    },
+    {
+        name: 'Week 9 Homework',
+        completed: false
+    }
+]
 
- /**
 
-    Referencing code in other files
- 
-    2a)  Great work! Now move that array initialization out into its own file. 
-        See ./data/assignments.js where you will initialize the data in place of inline in this function
+/**
 
-    2b) "Import" that data into this file in place of the inline code you had in step 1
-    
+   Referencing code in other files
 
-  */
+   2a)  Great work! Now move that array initialization out into its own file. 
+       See ./data/assignments.js where you will initialize the data in place of inline in this function
+
+   2b) "Import" that data into this file in place of the inline code you had in step 1
+   
+
+ */
 
 
 /**
@@ -46,5 +56,3 @@
     5) Declare a new array named `completedAssignments`. Loop through the `assignments` array data using a for loop.  Use a condition to only add to `allAssignments` where there are property values with `completed` of `true`
 
  */
-
-
