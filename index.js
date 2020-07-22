@@ -2,12 +2,19 @@
 
     We will push to github all along the way so we track our week and keep a log
 
+
+
     Declaring an Array with Objects
 
     1)  Declare and initialize an array of `assignments` with `name` and `completed` properties. Name the array `assignments`.  `completed` will have boolean values.
 
  */
-
+let assignments = [{
+    assignments: {
+        name: '', 
+        completed: true
+    } 
+}]
 
  /**
 
