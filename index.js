@@ -9,8 +9,7 @@
     1)  Declare and initialize an array of `assignments` with `name` and `completed` properties. Name the array `assignments`.  `completed` will have boolean values.
 
  */
-let assignments = [{name: '', completed: false}]
-
+const { assignments } = require('./data/assignments')
  /**
 
     Referencing code in other files
