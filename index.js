@@ -8,15 +8,9 @@
 
  */
 
-let assignments = [{
-        name: 'Week 8 Homework',
-        completed: false
-    },
-    {
-        name: 'Week 9 Homework',
-        completed: false
-    }
-]
+
+
+
 
 
 /**
@@ -30,6 +24,9 @@ let assignments = [{
    
 
  */
+
+ const {assignments} = require ('./data/assignments.js')
+ console.log(assignments)
 
 
 /**
