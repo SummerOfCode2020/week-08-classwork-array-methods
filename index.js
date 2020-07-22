@@ -8,8 +8,14 @@
 
  */
 
+ let assignments = [
+    {name: 'Password Validator', completed: true},
+    {name: 'Hazy Calculator', completed: true},
+    {name: 'The Perfect Lineup', completed: false}
 
- /**
+]
+
+/**
 
     Referencing code in other files
  
