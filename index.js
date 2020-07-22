@@ -1,12 +1,23 @@
 /**
 
     We will push to github all along the way so we track our week and keep a log
+    a)  code in git, start working.  First step: 'git checkout -b answer'
+
 
     Declaring an Array with Objects
 
     1)  Declare and initialize an array of `assignments` with `name` and `completed` properties. Name the array `assignments`.  `completed` will have boolean values.
 
  */
+const projects = [
+    {name: firstAssignment, completed: true},
+    {name: secondAssignment, completed: false},
+    {name: fourthAssignment, completed: false},
+    {name: fifthAssignment, completed: true},
+    {name: thirdAssignment, completed: true} 
+
+
+]
 
 
  /**
