@@ -8,19 +8,7 @@
 
  */
 
-    const assignments = [{
-        name: 'calculator',
-        completed: true
-    }, {
-        name: 'order book',
-        completed: false
-    }, {
-        name: 'perfect lineup',
-        completed: true
-    }, {
-        name: 'portfolio landing',
-        completed: false
-    }]
+   
 
  /**
 
@@ -34,7 +22,9 @@
 
   */
 
+    const assignments = require('./data/assignments.js')
 
+    console.log(assignments)
 /**
 
     Looping and using references to arrays a given positions
