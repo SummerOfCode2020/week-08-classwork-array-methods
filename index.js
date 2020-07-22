@@ -22,9 +22,10 @@
 
   */
 
-    const assignments = require('./data/assignments.js')
+    const { assignments } = require('./data/assignments.js')
 
-    console.log(assignments)
+   // console.log(assignments)
+
 /**
 
     Looping and using references to arrays a given positions
@@ -32,6 +33,10 @@
     3) Loop through the data using a for loop. Just console.log within the loop to show each item within the array
 
  */
+
+ for (let i = 0; i < assignments.length; i++) {
+     console.log(assignments[i])
+ }
 
 /**
 
@@ -41,6 +46,13 @@
 
  */
 
+ let allAssignments = []
+
+ for (let i = 0; i < assignments.length; i++) {
+     allAssignments.push(assignments[i])
+ }
+
+ console.log(allAssignments)
 
 /**
 
