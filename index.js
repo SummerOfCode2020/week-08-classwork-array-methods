@@ -8,6 +8,7 @@
 
  */
 
+   
 
  /**
 
@@ -21,6 +22,9 @@
 
   */
 
+    const { assignments } = require('./data/assignments.js')
+
+   // console.log(assignments)
 
 /**
 
@@ -30,6 +34,10 @@
 
  */
 
+ for (let i = 0; i < assignments.length; i++) {
+     console.log(assignments[i])
+ }
+
 /**
 
     Looping and Assignment
@@ -38,6 +46,13 @@
 
  */
 
+ let allAssignments = []
+
+ for (let i = 0; i < assignments.length; i++) {
+     allAssignments.push(assignments[i])
+ }
+
+ console.log(allAssignments)
 
 /**
 
@@ -47,4 +62,10 @@
 
  */
 
+ let completedAssignments = []
+ for (let i = 0; i < assignments.length; i++) {
+     if (assignments[i].completed === true) {
+         completedAssignments.push(assignments[i])
+     }}
 
+     console.log(completedAssignments)
