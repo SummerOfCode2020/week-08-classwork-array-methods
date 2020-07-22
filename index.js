@@ -17,6 +17,8 @@
 
     console.log(assignments)
 
+    module.exports = assignments
+
  /**
 
     Referencing code in other files
