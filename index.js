@@ -5,9 +5,17 @@
     Declaring an Array with Objects
 
     1)  Declare and initialize an array of `assignments` with `name` and `completed` properties. Name the array `assignments`.  `completed` will have boolean values.
+    
+ */  
+    const assignments = [{
+        name: 'project 1',
+        completed: true
+    }, {
+        name: 'project 2',
+        completed: false
+    }]
 
- */
-
+    console.log(assignments)
 
  /**
 
