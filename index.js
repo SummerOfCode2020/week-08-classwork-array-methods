@@ -36,7 +36,7 @@ console.log(assignments)
     3) Loop through the data using a for loop. Just console.log within the loop to show each item within the array
 
  */
-
+/*
 function arrayLoop(assignments) {
     assignments.forEach((assignment) => {
         console.log({ assignment })
@@ -44,7 +44,7 @@ function arrayLoop(assignments) {
 }
 
 arrayLoop(assignments)
-/*
+
 // alternative methods below as demonstrated by JR:
 // for-in method to access a specific index number value only
 arrayLoopAlt = (data) => {
@@ -61,7 +61,7 @@ for (let index = 0; index < assignments.length; index = index + 1) {
     const assignment = assignments[index]
     console.log({ assignment })
 }
-
+*/
 /**
 
     Looping and Assignment
@@ -69,7 +69,15 @@ for (let index = 0; index < assignments.length; index = index + 1) {
     4) Declare a new array named `allAssignments`. Loop through the `assignments` array data using a for loop and assign each item from `assignments` to the new `allAssignments` array
 
  */
+function relocateAssignments(assignments) {
+    let allAssignments = []
+    assignments.forEach(assignment => {
+        allAssignments.push(assignments)
+    })
+    return allAssignments
+}
 
+relocateAssignments(assignments)
 
 /**
 
