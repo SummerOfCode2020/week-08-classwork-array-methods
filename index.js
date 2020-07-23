@@ -108,3 +108,10 @@ let completedAssignments = assignments.filter((assignment) => {
 })
 
 console.log(completedAssignments)
+
+let completedAssignmentsAlt = assignments.filter((assignment) => {
+    let { completed } = assignment
+    return completed
+})
+
+console.log(completedAssignments)
