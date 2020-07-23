@@ -11,6 +11,14 @@ const assignments = [
     name: 'week 03',
     completed: false,
   },
+  {
+    name: 'week 04',
+    completed: false,
+  },
+  {
+    name: 'week 05',
+    completed: false,
+  },
 ]
 module.exports = {
   assignments

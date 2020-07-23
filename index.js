@@ -30,7 +30,7 @@ const { assignments } = require('./data/assignments')
 
  */
 assignments.forEach(element => {
-    console.log(element)
+    //   console.log(element)
 });
 
 /**
@@ -40,8 +40,9 @@ assignments.forEach(element => {
     4) Declare a new array named `allAssignments`. Loop through the `assignments` array data using a for loop and assign each item from `assignments` to the new `allAssignments` array
 
  */
-
-
+let allAssignments = []
+assignments.forEach(assignment => allAssignments.push(assignment))
+//console.log(allAssignments)
 /**
 
     Filtering
@@ -49,5 +50,7 @@ assignments.forEach(element => {
     5) Declare a new array named `completedAssignments`. Loop through the `assignments` array data using a for loop.  Use a condition to only add to `allAssignments` where there are property values with `completed` of `true`
 
  */
+let completedAssignments = assignments.filter(assignment => assignment.completed === true)
+console.log(completedAssignments)
 
 
