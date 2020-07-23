@@ -5,16 +5,17 @@ const assignments = [
 ]
 
 function assignmentsImport(assignments) {
-    const allAssignments = []
+    const completedAssignments = []
     assignments.forEach(function (assignment) {
         if (assignment.completed == true) {
         // console.log({ assignment })
-        allAssignments.push(assignment)
+        completedAssignments.push(assignment)
         }
     })
-        return {allAssignments}
+        return {completedAssignments}
 }
 console.log(assignmentsImport(assignments))
+
 
 
 module.exports = {

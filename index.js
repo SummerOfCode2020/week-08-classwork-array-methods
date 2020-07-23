@@ -34,7 +34,23 @@ const assignmentsImport = require('./data/assignments.js')
     3) Loop through the data using a for loop. Just console.log within the loop to show each item within the array
 
  */
+//for loop with a lot of flexibility
+/*     for (let index=0; index < assignments.length; index - 1) {
+        const assignment = assignments[index]
+        console.log({assignment})
+    }
+// also flexible
+    for (let index in assignments.splice(2, 2)) {
+        const assignment = assignments[index]
+        console.log(index, assignment)
+    }
 
+    //map function
+    let allAssignments = assignments.map( (assignment) => { 
+        return assignment
+    } )
+
+console.log(allAssignments) */
 /**
 
     Looping and Assignment
