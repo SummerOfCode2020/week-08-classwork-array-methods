@@ -7,12 +7,16 @@ const assignments = [
 function assignmentsImport(assignments) {
     const allAssignments = []
     assignments.forEach(function (assignment) {
+        if (assignment.completed == true) {
         // console.log({ assignment })
         allAssignments.push(assignment)
+        }
     })
         return {allAssignments}
 }
 console.log(assignmentsImport(assignments))
 
 
-module.exports = assignmentsImport
+module.exports = {
+    assignmentsImport
+    }

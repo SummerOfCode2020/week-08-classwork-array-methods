@@ -25,6 +25,8 @@
   */
 
 const assignmentsImport = require('./data/assignments.js')
+
+// destructuring
 /**
 
     Looping and using references to arrays a given positions
