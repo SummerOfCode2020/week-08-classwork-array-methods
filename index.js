@@ -52,6 +52,10 @@ console.log(assignments);
     3) Loop through the data using a for loop. Just console.log within the loop to show each item within the array
 
  */
+for (let i = 0; i < assignments.length; i++) {
+    console.log(assignments[i])
+};
+
 
 /**
 
