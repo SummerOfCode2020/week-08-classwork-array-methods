@@ -74,19 +74,52 @@ assignments.forEach( (assignment) => {
 
  */
 let allAssignments = []
-for (const index in assignments) {
+/*for (const index in assignments) {
     const assignment = assignments[index]
     allAssignments.push(assignment)
 }
-console.log({ allAssignments })
+console.log({ allAssignments }) */
+// forEach option
+/*assignments.forEach( (assignment) => {
+    allAssignments.push(assignment)
+})
+console.log({allAssignments}) */
 
-
+allAssignments = assignments.map( (assignment) => {
+    return assignment
+} )
+console.log(allAssignments)
 /**
+
 
     Filtering
  
-    5) Declare a new array named `completedAssignments`. Loop through the `assignments` array data using a for loop.  Use a condition to only add to `allAssignments` where there are property values with `completed` of `true`
+    5) Declare a new array named `completedAssignments`. 
+    Loop through the `assignments` array data using a for loop.  
+    Use a condition to only add to `completedAssignments` where 
+    there are property values with `completed` of `true`
 
  */
 
+/*let completedAssignments = []
+completedAssignments = assignments.filter( (assignment) => {
+    let {completed} = assignment;
+    return completed
+} )
+console.log(completedAssignments)*/
+/*let completedAssignments = []
+completedAssignments = assignments.map( (assignment) => {
+    if (completed = true)
+    return assignment.completed
+})
+console.log(completedAssignments)*/
 
+let completedAssignments = []
+for(const index in assignments) {
+    const assignment = assignments[index]
+
+    if (assignment.completed) {
+        completedAssignments.push(assignment)
+    }
+}
+console.log({completedAssignments})
