@@ -10,6 +10,9 @@
 
 let {assignments} = require ('./data/assignments')
 console.log(assignments)
+for (let i = 0; i < assignments.length;i++){
+    console.log(assignments[i])
+}
  /**.
 
     Referencing code in other files
