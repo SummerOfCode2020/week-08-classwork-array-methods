@@ -11,7 +11,7 @@
  */
 
 const { assignments } = require('./data/assignments')
-console.log({assignments})
+/*console.log({assignments})
 
 
  /**
@@ -28,8 +28,17 @@ console.log({assignments})
 
   */
 
+/*for (let i = 0; i < assignments.length; i = i + 1) {
+    const assignment = assignments [i]
+    console.log({ assignment })
+}
 
-/**
+
+//assignments.forEach((assignment) => { })
+
+/*
+
+
 
     Looping and using references to arrays a given positions
  
@@ -37,14 +46,24 @@ console.log({assignments})
 
  */
 
+
+
 /**
 
     Looping and Assignment
  
-    4) Declare a new array named `allAssignments`. Loop through the `assignments` array data using a for loop and assign each item from `assignments` to the new `allAssignments` array
+    4) Declare a new array named `allAssignments`. Loop through the `assignments`
+    array data using a for loop and assign each item from `assignments` to the new
+    `allAssignments` array
 
  */
 
+const allAssignments = []
+for (let i = 0; i < assignments.length; i = i + 1) {
+    allAssignments[i] = assignments [i]
+}
+
+console.log(allAssignments)
 
 /**
 
