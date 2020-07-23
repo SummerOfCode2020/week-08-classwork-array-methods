@@ -9,15 +9,9 @@
     1)  Declare and initialize an array of `assignments` with `name` and `completed` properties. Name the array `assignments`.  `completed` will have boolean values.
 
  */
-const projects = [
-    {name: firstAssignment, completed: true},
-    {name: secondAssignment, completed: false},
-    {name: fourthAssignment, completed: false},
-    {name: fifthAssignment, completed: true},
-    {name: thirdAssignment, completed: true} 
 
-
-]
+const { assignments } = require('./data/assignments')
+console.log({assignments})
 
 
  /**
@@ -26,6 +20,8 @@ const projects = [
  
     2a)  Great work! Now move that array initialization out into its own file. 
         See ./data/assignments.js where you will initialize the data in place of inline in this function
+
+        
 
     2b) "Import" that data into this file in place of the inline code you had in step 1
     
