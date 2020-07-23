@@ -21,35 +21,29 @@
         assignments
     }
 
- /**
 
-    Referencing code in other files
- 
-    2a)  Great work! Now move that array initialization out into its own file. 
-        See ./data/assignments.js where you will initialize the data in place of inline in this function
+/*
 
-    2b) "Import" that data into this file in place of the inline code you had in step 1
-    
-
-  */
+// using for-in with an array gives us access to the index number value only
 
 
-/**
-
-    Looping and using references to arrays a given positions
- 
-    3) Loop through the data using a for loop. Just console.log within the loop to show each item within the array
-
- */
-    for (let i = 0; i < assignments.length; i++) {}
-    console.log(assignments)
-/**
 
     Looping and Assignment
  
     4) Declare a new array named `allAssignments`. Loop through the `assignments` array data using a for loop and assign each item from `assignments` to the new `allAssignments` array
 
- */ 
+ */  
+let allAssignments = []
+
+assignments.forEach( (assignment) => {
+    allAssignments.push(assignment)
+})
+
+console.log({ allAssignments})
+
+
+
+
 
 
 
