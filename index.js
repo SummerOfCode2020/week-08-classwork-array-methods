@@ -25,8 +25,8 @@
 
  */
 
- const {assignments} = require ('./data/assignments.js')
- console.log(assignments)
+ const {assignments} = require ('./data/assignments')
+
 
 
 /**
@@ -36,6 +36,14 @@
     3) Loop through the data using a for loop. Just console.log within the loop to show each item within the array
 
  */
+
+function logThoseObjects(array){
+    array.forEach(element => {
+        console.log(element)
+    });
+}
+
+logThoseObjects(assignments)
 
 /**
 
