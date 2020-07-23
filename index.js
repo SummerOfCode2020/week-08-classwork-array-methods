@@ -27,7 +27,7 @@ a) code in git, start working. first step: 'git checkout - b answer'
 
  */
 const { assignments } = require('./data/assignments')
-console.log(assignments)
+//console.log(assignments)
 
 /**
 
@@ -87,19 +87,24 @@ for (const index in assignments) {
 }
 console.log({ allAssignments }) */
 
-let allAssignments = assignments.map((assignment) => {
+/* let allAssignments = assignments.map((assignment) => {
     return assignment
 })
 
-console.log(allAssignments)
+console.log(allAssignments) */
 
 /**
 
     Filtering
 
     5) Declare a new array named `completedAssignments`. Loop through the `assignments` array data using a for loop.
-    Use a condition to only add to `allAssignments` where there are property values with `completed` of `true`
+    Use a condition to only add to `completedAssignments` where there are property values with `completed` of `true`
 
  */
 
+let completedAssignments = assignments.filter((assignment) => {
+    if (assignment.completed)
+        return assignment
+})
 
+console.log(completedAssignments)
