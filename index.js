@@ -50,7 +50,7 @@ assignments.forEach(assignment => allAssignments.push(assignment))
     5) Declare a new array named `completedAssignments`. Loop through the `assignments` array data using a for loop.  Use a condition to only add to `allAssignments` where there are property values with `completed` of `true`
 
  */
-let completedAssignments = assignments.filter(assignment => assignment.completed === true)
+let completedAssignments = assignments.filter(assignment => assignment.completed)
 console.log(completedAssignments)
 
 
