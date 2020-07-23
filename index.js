@@ -77,13 +77,31 @@ function loop(assignment) {
 console.log(allAssignments);
 */
 
-
+/*
 let assigning = loop => {
     for (let i = 0; i < assignments.length; i++) {
-        return allAssignments.push(assignments[i]);
+        allAssignments.push(assignments[i]);
     };
 }
-console.log(assigning(), allAssignments);
+*/
+console.log({ allAssignments });
+console.log(assignments);
+
+// FOR IN
+/*
+for (let i in assignments) {
+    const assignment = assignments[i]
+    console.log({ i })
+};
+*/
+
+// forEach
+
+assignments.forEach((assignment) => {
+    allAssignments.push(assignments);
+})
+
+
 /**
 
     Filtering

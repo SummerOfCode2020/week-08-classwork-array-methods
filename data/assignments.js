@@ -1,17 +1,20 @@
-let assignments = [{
-    assignment1: {
-        name: '',
+let assignments = [
+    {
+        name: 'Assignment1',
         completed: true
     },
-    assignment2: {
-        name: '',
+
+    {
+        name: 'Assignment2',
         completed: false
     },
-    assignment3: {
-        name: '',
+
+    {
+        name: 'Assignment3',
         completed: true
-    },
-}];
+    }
+
+];
 
 module.exports = {
     assignments
