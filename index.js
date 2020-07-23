@@ -84,7 +84,7 @@ assignments.forEach( (assignment) => {
     allAssignments.push(assignment)
 } )
 
-// option b - using the `map` for the least amount of syntax to solve the challenge
+// option c - using the `map` for the least amount of syntax to solve the challenge
 allAssignments = assignments.map( assignment => {
     return assignment
 } )
