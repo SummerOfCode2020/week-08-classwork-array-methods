@@ -37,13 +37,12 @@ console.log(assignments)
 
  */
 
-function arrayLoop(data, index) {
+function arrayLoop(data) {
     data.forEach(assignment =>
         console.log(assignment))
-    return assignment[index]
 }
 
-arrayLoop(assignments, 0)
+arrayLoop(assignments)
 /**
 
     Looping and Assignment
