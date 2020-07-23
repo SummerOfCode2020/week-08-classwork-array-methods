@@ -8,8 +8,12 @@
 
  */
 
-
- /**
+let {assignments} = require ('./data/assignments')
+console.log(assignments)
+for (let i = 0; i < assignments.length;i++){
+    console.log(assignments[i])
+}
+ /**.
 
     Referencing code in other files
  
@@ -36,9 +40,12 @@
  
     4) Declare a new array named `allAssignments`. Loop through the `assignments` array data using a for loop and assign each item from `assignments` to the new `allAssignments` array
 
- */
-
-
+ */ 
+let allAssignments = []
+for ( let i = 0; i < assignments.length ; i++) {
+allAssignments.push(assignments[i])
+}
+console.log({allAssignments})
 /**
 
     Filtering
