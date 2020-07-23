@@ -122,8 +122,17 @@ console.log(allAssignments);
 let completedAssignment = assignments.map(completedAssignment => {
     if (completedAssignment.completed === true) {
         return completedAssignment
+    } else {
+        return 'Not yet!'
     }
 })
-console.log(completedAssignment);
+console.log({ completedAssignment });
 console.log(assignments);
 
+// Try a FILTER !! 
+/*
+let completedAssignments = assignment.filter((assignment) => {
+    let completed = assignment;
+    return completed;
+})
+*/
