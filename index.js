@@ -40,7 +40,7 @@ assignments
 // 2b) "Import" that data into this file in place of the inline code you had in step 1
 const { assignments } = require('./data/assignments');
 
-console.log(assignments);
+// console.log(assignments);
 
 
 
@@ -52,10 +52,12 @@ console.log(assignments);
     3) Loop through the data using a for loop. Just console.log within the loop to show each item within the array
 
  */
-for (let i = 0; i < assignments.length; i++) {
+
+/*
+ for (let i = 0; i < assignments.length; i++) {
     console.log(assignments[i])
 };
-
+*/
 
 /**
 
@@ -64,7 +66,14 @@ for (let i = 0; i < assignments.length; i++) {
     4) Declare a new array named `allAssignments`. Loop through the `assignments` array data using a for loop and assign each item from `assignments` to the new `allAssignments` array
 
  */
+let allAssignments = []
 
+function loop(assignment) {
+    for (let i = 0; i < assignments.length; i++) {
+        return allAssignments.push(assignments[i]);
+    };
+};
+console.log(allAssignments);
 
 /**
 
