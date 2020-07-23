@@ -14,3 +14,6 @@ let assignments = [{
 module.exports = {
     assignments
 }
+
+// alternative non-object way:
+// module.exports = assignments

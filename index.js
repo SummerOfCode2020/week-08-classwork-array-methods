@@ -27,6 +27,7 @@ a) code in git, start working. first step: 'git checkout - b answer'
 
  */
 const { assignments } = require('./data/assignments')
+console.log(assignments)
 
 /**
 
@@ -36,6 +37,13 @@ const { assignments } = require('./data/assignments')
 
  */
 
+function arrayLoop(data, index) {
+    data.forEach(assignment =>
+        console.log(assignment))
+    return assignment[index]
+}
+
+arrayLoop(assignments, 0)
 /**
 
     Looping and Assignment
