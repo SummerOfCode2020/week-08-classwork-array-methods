@@ -30,7 +30,9 @@ const { assignments } = require('./data/assignments')
     3) Loop through the data using a for loop. Just console.log within the loop to show each item within the array
 
  */
-
+for(let i = 0;i< assignments.length; i++) {
+    console.log(assignments[i])
+}
 /**
 
     Looping and Assignment
@@ -38,6 +40,11 @@ const { assignments } = require('./data/assignments')
     4) Declare a new array named `allAssignments`. Loop through the `assignments` array data using a for loop and assign each item from `assignments` to the new `allAssignments` array
 
  */
+
+let allAssignments = []
+for(let i = 0; i<assignments.length; i++) {
+    allAssignments.pop(assignments[i])
+}
 
 
 /**
