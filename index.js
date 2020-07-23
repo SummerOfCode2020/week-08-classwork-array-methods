@@ -68,13 +68,22 @@ const { assignments } = require('./data/assignments');
  */
 let allAssignments = []
 
+/*
 function loop(assignment) {
     for (let i = 0; i < assignments.length; i++) {
         return allAssignments.push(assignments[i]);
     };
 };
 console.log(allAssignments);
+*/
 
+
+let assigning = loop => {
+    for (let i = 0; i < assignments.length; i++) {
+        return allAssignments.push(assignments[i]);
+    };
+}
+console.log(assigning(), allAssignments);
 /**
 
     Filtering
