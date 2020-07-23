@@ -40,13 +40,12 @@ for(let i = 0;i< assignments.length; i++) {
     4) Declare a new array named `allAssignments`. Loop through the `assignments` array data using a for loop and assign each item from `assignments` to the new `allAssignments` array
 
  */
-
+console.log('= = = = = = = = =')
 let allAssignments = []
 for(let i = 0; i<assignments.length; i++) {
-    allAssignments.pop(assignments[i])
+    allAssignments.push(assignments[i])
 }
-
-
+console.log({allAssignments})
 /**
 
     Filtering
@@ -54,5 +53,17 @@ for(let i = 0; i<assignments.length; i++) {
     5) Declare a new array named `completedAssignments`. Loop through the `assignments` array data using a for loop.  Use a condition to only add to `allAssignments` where there are property values with `completed` of `true`
 
  */
+console.log('= = = = = = = = =')
+let completedAssignments = []
+assignments.forEach(function(item){
+    for(let key in item) {
+        const value = item[key]
+        if (key === 'completed') {
+            if (value) {
+                completedAssignments.push(item)
+            }
+        }
+    }
+})
 
-
+console.log({completedAssignments})
