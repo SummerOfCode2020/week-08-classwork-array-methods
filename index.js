@@ -53,6 +53,17 @@ logThoseObjects(assignments)
 
  */
 
+let allAssignments = []
+
+function pushToAllAssignments(array){
+for (let index = 0; index < array.length; index++) {
+    allAssignments.push(array[index])
+}
+    return allAssignments
+}
+
+console.log(pushToAllAssignments(assignments))
+
 
 /**
 
@@ -61,3 +72,6 @@ logThoseObjects(assignments)
     5) Declare a new array named `completedAssignments`. Loop through the `assignments` array data using a for loop.  Use a condition to only add to `allAssignments` where there are property values with `completed` of `true`
 
  */
+const completedAssignments = assignments.filter(assignment => assignment.completed === true)
+
+console.log(completedAssignments)
