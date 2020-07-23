@@ -9,17 +9,24 @@
  */
 
 
- /**
 
-    Referencing code in other files
- 
-    2a)  Great work! Now move that array initialization out into its own file. 
-        See ./data/assignments.js where you will initialize the data in place of inline in this function
 
-    2b) "Import" that data into this file in place of the inline code you had in step 1
-    
 
-  */
+
+/**
+
+   Referencing code in other files
+
+   2a)  Great work! Now move that array initialization out into its own file. 
+       See ./data/assignments.js where you will initialize the data in place of inline in this function
+
+   2b) "Import" that data into this file in place of the inline code you had in step 1
+   
+
+ */
+
+ const {assignments} = require ('./data/assignments')
+
 
 
 /**
@@ -30,6 +37,14 @@
 
  */
 
+function logThoseObjects(array){
+    array.forEach(element => {
+        console.log(element)
+    });
+}
+
+//logThoseObjects(assignments)
+
 /**
 
     Looping and Assignment
@@ -37,6 +52,17 @@
     4) Declare a new array named `allAssignments`. Loop through the `assignments` array data using a for loop and assign each item from `assignments` to the new `allAssignments` array
 
  */
+
+let allAssignments = []
+
+function pushToAllAssignments(array){
+for (let index = 0; index < array.length; index++) {
+    allAssignments.push(array[index])
+}
+    return allAssignments
+}
+
+//console.log(pushToAllAssignments(assignments))
 
 
 /**
@@ -46,5 +72,25 @@
     5) Declare a new array named `completedAssignments`. Loop through the `assignments` array data using a for loop.  Use a condition to only add to `allAssignments` where there are property values with `completed` of `true`
 
  */
+//const completedAssignments = assignments.filter(assignment => assignment.completed === true)
+function completedAssignments(array, originalFirstObj){
+        [firstObj, ...rest] = array
+        if (firstObj === originalFirstObj) {
+            return array
+        }
+    
+    if(originalFirstObj === undefined){
+        [originalFirstObj, ...restArray] = array 
+        
+    }
 
 
+
+    if(firstObj.completed === true){
+        rest.push(firstObj)
+    }
+
+    return completedAssignments(rest, originalFirstObj)
+}
+
+console.log(completedAssignments(assignments))
