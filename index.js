@@ -37,12 +37,31 @@ console.log(assignments)
 
  */
 
-function arrayLoop(data) {
-    data.forEach(assignment =>
-        console.log(assignment))
+function arrayLoop(assignments) {
+    assignments.forEach((assignment) => {
+        console.log({ assignment })
+    })
 }
 
 arrayLoop(assignments)
+/*
+// alternative methods below as demonstrated by JR:
+// for-in method to access a specific index number value only
+arrayLoopAlt = (data) => {
+    for (let index in assignments) {
+        const assignment = assignments[index]
+        console.log(index, assignment)
+    }
+}
+arrayLoopAlt(assignments)
+// for loop
+for (let index = 0; index < assignments.length; index = index + 1) {
+    // use the singular name of the arary
+    // square brackets are used to "positionally" access array items
+    const assignment = assignments[index]
+    console.log({ assignment })
+}
+
 /**
 
     Looping and Assignment
