@@ -9,7 +9,7 @@
      Name the array `assignments`.  `completed` will have boolean values.
 
  */
-let assignments =[
+/*let assignments =[
     {
         name: 'week-07-perfect-lineup', 
         completed: false
@@ -31,7 +31,7 @@ let assignments =[
 module.exports = {
     assignments
 }
-
+*/
 
  /**
 
@@ -44,23 +44,41 @@ module.exports = {
     
 
   */
-
-
+const { assignments } = require('./data/assignments')
+console.log(assignments)
 /**
 
     Looping and using references to arrays a given positions
  
-    3) Loop through the data using a for loop. Just console.log within the loop to show each item within the array
+    3) Loop through the data using a for loop. 
+    Just console.log within the loop to show each item within the array
 
  */
+for ( let index = 0; index < assignments.length; index = index + 1 ) {
+    const assignment = assignments[index]
+    console.log({ assignment })
+}
+//for.Each option
+assignments.forEach( (assignment) => {
+    console.log({ assignment })
+} )
 
 /**
 
     Looping and Assignment
  
-    4) Declare a new array named `allAssignments`. Loop through the `assignments` array data using a for loop and assign each item from `assignments` to the new `allAssignments` array
+    4) Declare a new array named `allAssignments`. 
+    Loop through the `assignments` array data using a 
+    for loop and assign each item from `assignments` 
+    to the new `allAssignments` array
 
  */
+let allAssignments = []
+for (const index in assignments) {
+    const assignment = assignments[index]
+    allAssignments.push(assignment)
+}
+console.log({ allAssignments })
 
 
 /**
