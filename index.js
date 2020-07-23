@@ -7,32 +7,20 @@
     1)  Declare and initialize an array of `assignments` with `name` and `completed` properties. Name the array `assignments`.  `completed` will have boolean values.
 
  */
-let assignments = [
-    {
-    name: 'week 01',
-    completed: true,
-    }, 
-    {
-    name: 'week 02',
-    completed: true,
-    },
-    {
-    name: 'week 03',
-    completed: false,
-    },
-]   
- /**
 
-    Referencing code in other files
+
+/**
+
+   Referencing code in other files
  
-    2a)  Great work! Now move that array initialization out into its own file. 
-        See ./data/assignments.js where you will initialize the data in place of inline in this function
+   2a)  Great work! Now move that array initialization out into its own file. 
+       See ./data/assignments.js where you will initialize the data in place of inline in this function
 
-    2b) "Import" that data into this file in place of the inline code you had in step 1
-    
+   2b) "Import" that data into this file in place of the inline code you had in step 1
+   
 
-  */
-
+ */
+const { assignments } = require('./data/assignments')
 
 /**
 
@@ -41,11 +29,14 @@ let assignments = [
     3) Loop through the data using a for loop. Just console.log within the loop to show each item within the array
 
  */
+assignments.forEach(element => {
+    console.log(element)
+});
 
 /**
 
     Looping and Assignment
- 
+
     4) Declare a new array named `allAssignments`. Loop through the `assignments` array data using a for loop and assign each item from `assignments` to the new `allAssignments` array
 
  */
@@ -54,7 +45,7 @@ let assignments = [
 /**
 
     Filtering
- 
+
     5) Declare a new array named `completedAssignments`. Loop through the `assignments` array data using a for loop.  Use a condition to only add to `allAssignments` where there are property values with `completed` of `true`
 
  */
