@@ -72,7 +72,7 @@ for (let index = 0; index < assignments.length; index = index + 1) {
 function relocateAssignments(assignments) {
     let allAssignments = []
     assignments.forEach(assignment => {
-        allAssignments.push(assignments)
+        allAssignments.push(assignment)
     })
     return allAssignments
 }
