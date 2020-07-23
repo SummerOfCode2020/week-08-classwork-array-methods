@@ -8,12 +8,9 @@
 
  */
 
-let assignments =[{name : "Wesley", completed: false},{
-name : "Jaboin", completed: true}];
-console.log(assignments);
-
-
- /**
+let {assignments} = require ('./data/assignments')
+console.log(assignments)
+ /**.
 
     Referencing code in other files
  
