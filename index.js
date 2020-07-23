@@ -66,10 +66,11 @@ for (let index = 0; index < assignments.length; index = index + 1) {
 
     Looping and Assignment
 
-    4) Declare a new array named `allAssignments`. Loop through the `assignments` array data using a for loop and assign each item from `assignments` to the new `allAssignments` array
+    4) Declare a new array named `allAssignments`. Loop through the `assignments` array data using a for loop and 
+    assign each item from `assignments` to the new `allAssignments` array
 
  */
-function relocateAssignments(assignments) {
+/* function relocateAssignments(assignments) {
     let allAssignments = []
     assignments.forEach(assignment => {
         allAssignments.push(assignment)
@@ -79,11 +80,25 @@ function relocateAssignments(assignments) {
 
 relocateAssignments(assignments)
 
+let allAssignments = []
+for (const index in assignments) {
+    const assignment = assignments[index]
+    allAssignments.push(assignment)
+}
+console.log({ allAssignments }) */
+
+let allAssignments = assignments.map((assignment) => {
+    return assignment
+})
+
+console.log(allAssignments)
+
 /**
 
     Filtering
 
-    5) Declare a new array named `completedAssignments`. Loop through the `assignments` array data using a for loop.  Use a condition to only add to `allAssignments` where there are property values with `completed` of `true`
+    5) Declare a new array named `completedAssignments`. Loop through the `assignments` array data using a for loop.
+    Use a condition to only add to `allAssignments` where there are property values with `completed` of `true`
 
  */
 
