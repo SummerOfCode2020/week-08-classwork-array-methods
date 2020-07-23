@@ -5,11 +5,14 @@ const assignments = [
 ]
 
 function assignmentsImport(assignments) {
+    const allAssignments = []
     assignments.forEach(function (assignment) {
-        console.log({ assignment })
+        // console.log({ assignment })
+        allAssignments.push(assignment)
     })
-    return assignments
+        return {allAssignments}
 }
 console.log(assignmentsImport(assignments))
+
 
 module.exports = assignmentsImport
