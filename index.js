@@ -17,7 +17,9 @@
 
     console.log(assignments)
 
-    module.exports = assignments
+    module.exports = {
+        assignments
+    }
 
  /**
 
@@ -39,14 +41,16 @@
     3) Loop through the data using a for loop. Just console.log within the loop to show each item within the array
 
  */
-
+    for (let i = 0; i < assignments.length; i++) {}
+    console.log(assignments)
 /**
 
     Looping and Assignment
  
     4) Declare a new array named `allAssignments`. Loop through the `assignments` array data using a for loop and assign each item from `assignments` to the new `allAssignments` array
 
- */
+ */ 
+
 
 
 /**
