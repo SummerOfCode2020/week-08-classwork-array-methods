@@ -85,9 +85,15 @@ assignments.forEach( (assignment) => {
 } )
 
 // option c - using the `map` for the least amount of syntax to solve the challenge
-allAssignments = assignments.map( assignment => {
+allAssignments = assignments.map( (assignment) => {
     return assignment
 } )
+
+// option c version X 🎊 - using the `map` and also the least amount of syntax to solve the challenge including omitted all the non-required syntax
+// the "()" parentheses are only required when there are no parameters or when there are more than one parameter
+// when learning to code is is helpful to keep using parentheses all the time as a visual confirmation of the parameters
+// "return" is implicit and the brackets can be omitted 
+allAssignments = assignments.map( assignment => assignment)
 
 
 /**
@@ -98,7 +104,7 @@ allAssignments = assignments.map( assignment => {
 
  */
 
-// option 1 - using a for-in loop
+// option 1 - using a for-in loop and updating an externally defined array (external form the loop that is)
 let completedAssignments = []
 for (const index in assignments) {
     const assignment = assignments[index]
@@ -111,7 +117,7 @@ for (const index in assignments) {
 
 console.log({completedAssignments})
 
-// option 2 - using the `filter` method of the Array
+// option 2 - using the `filter` method of the Array - does not require an external variable since it does the assignment directly as a result of the `filter` method call
 completedAssignments = assignments.filter( (assignment) => {
     // optional use of object property destructuring
     // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
@@ -124,4 +130,8 @@ completedAssignments = assignments.filter( (assignment) => {
 
 console.log( { completedAssignments } )
 
-
+// option 2.X - As Xavier 👀 points out, we can use super minimum syntax
+// the "()" parentheses are only required when there are no parameters or when there are more than one parameter
+// when learning to code is is helpful to keep using parentheses all the time as a visual confirmation of the parameters
+// "return" is implicit and the brackets can be omitted 
+completedAssignments = assignments.filter( assignment => assignment.completed )
