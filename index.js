@@ -66,4 +66,16 @@ assignments.forEach(function(item){
     }
 })
 
+function isCompleted (obj) {
+    for(let key in obj) {
+        const value = obj[key]
+        if (key === 'completed') {
+            return value
+        }
+    }
+}
+
+let completedAssignments2 = assignments.filter(isCompleted)
+
 console.log({completedAssignments})
+console.log({completedAssignments2})
