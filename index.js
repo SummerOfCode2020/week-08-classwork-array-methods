@@ -1,19 +1,4 @@
-/**
-
-    We will push to github all along the way so we track our week and keep a log
-
-    Declaring an Array with Objects
-
-    1)  Declare and initialize an array of `assignments` with `name` and `completed` properties. Name the array `assignments`.  `completed` will have boolean values.
-
- */
-
- let assignments = [
-    {name: 'Password Validator', completed: true},
-    {name: 'Hazy Calculator', completed: true},
-    {name: 'The Perfect Lineup', completed: false}
-
-]
+      
 
 /**
 
@@ -27,6 +12,9 @@
 
   */
 
+const  {assignments}  = require ('./data/assignments')
+console.log(assignments)
+
 
 /**
 
@@ -35,7 +23,9 @@
     3) Loop through the data using a for loop. Just console.log within the loop to show each item within the array
 
  */
-
+for (let index = 0; index < assignments.length; index = index + 1)
+const assignment = assignments [index]
+console.log ({ assignment })
 /**
 
     Looping and Assignment
@@ -43,6 +33,10 @@
     4) Declare a new array named `allAssignments`. Loop through the `assignments` array data using a for loop and assign each item from `assignments` to the new `allAssignments` array
 
  */
+let allAssignments;
+assignment.forEach(assignment) {
+    allAssignments.push(assignment)
+  }
 
 
 /**
@@ -52,5 +46,17 @@
     5) Declare a new array named `completedAssignments`. Loop through the `assignments` array data using a for loop.  Use a condition to only add to `allAssignments` where there are property values with `completed` of `true`
 
  */
+
+let completedAssignments = []
+for (const index in assignments) {
+    const assignment = assignments[index]
+
+    if (assignment.completed) {
+    
+        completedAssignments.push(assignment)
+    }
+}
+
+console.log({completedAssignments})
 
 
