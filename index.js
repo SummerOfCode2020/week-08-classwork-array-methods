@@ -43,7 +43,7 @@ function logThoseObjects(array){
     });
 }
 
-logThoseObjects(assignments)
+//logThoseObjects(assignments)
 
 /**
 
@@ -62,7 +62,7 @@ for (let index = 0; index < array.length; index++) {
     return allAssignments
 }
 
-console.log(pushToAllAssignments(assignments))
+//console.log(pushToAllAssignments(assignments))
 
 
 /**
@@ -72,6 +72,25 @@ console.log(pushToAllAssignments(assignments))
     5) Declare a new array named `completedAssignments`. Loop through the `assignments` array data using a for loop.  Use a condition to only add to `allAssignments` where there are property values with `completed` of `true`
 
  */
-const completedAssignments = assignments.filter(assignment => assignment.completed === true)
+//const completedAssignments = assignments.filter(assignment => assignment.completed === true)
+function completedAssignments(array, originalFirstObj){
+        [firstObj, ...rest] = array
+        if (firstObj === originalFirstObj) {
+            return array
+        }
+    
+    if(originalFirstObj === undefined){
+        [originalFirstObj, ...restArray] = array 
+        
+    }
 
-console.log(completedAssignments)
+
+
+    if(firstObj.completed === true){
+        rest.push(firstObj)
+    }
+
+    return completedAssignments(rest, originalFirstObj)
+}
+
+console.log(completedAssignments(assignments))
