@@ -62,10 +62,6 @@
 
  */
 
- let completedAssignments = []
- for (let i = 0; i < assignments.length; i++) {
-     if (assignments[i].completed === true) {
-         completedAssignments.push(assignments[i])
-     }}
+ let completedAssignments = assignments.filter(assignment => assignment.completed === true)
 
-     console.log(completedAssignments)
+ console.log(completedAssignments)
