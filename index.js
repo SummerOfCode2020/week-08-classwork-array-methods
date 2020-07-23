@@ -107,15 +107,23 @@ assignments.forEach((assignment) => {
 console.log({ allAssignments });
 console.log(assignments);
 */
+/*
 let allAssignments = assignments.map((assignment) => assignment)
 console.log(allAssignments);
-
+*/
 /**
-
+   
     Filtering
 
-    5) Declare a new array named `completedAssignments`. Loop through the `assignments` array data using a for loop.  Use a condition to only add to `allAssignments` where there are property values with `completed` of `true`
-
+    5) Declare a new array named `completedAssignments`. Loop through the `assignments` array data using a for loop.  
+    Use a condition to only add to `completedAssignments` where there are property values with `completed` of `true`
  */
 
+let completedAssignment = assignments.map(completedAssignment => {
+    if (completedAssignment.completed === true) {
+        return completedAssignment
+    }
+})
+console.log(completedAssignment);
+console.log(assignments);
 
