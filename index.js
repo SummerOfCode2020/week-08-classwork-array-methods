@@ -114,4 +114,4 @@ let completedAssignmentsAlt = assignments.filter((assignment) => {
     return completed
 })
 
-console.log(completedAssignments)
+console.log(completedAssignmentsAlt)
