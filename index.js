@@ -66,7 +66,8 @@ const { assignments } = require('./data/assignments');
     4) Declare a new array named `allAssignments`. Loop through the `assignments` array data using a for loop and assign each item from `assignments` to the new `allAssignments` array
 
  */
-let allAssignments = []
+
+// let allAssignments = []
 
 /*
 function loop(assignment) {
@@ -84,9 +85,10 @@ let assigning = loop => {
     };
 }
 */
+/*
 console.log({ allAssignments });
 console.log(assignments);
-
+*/
 // FOR IN
 /*
 for (let i in assignments) {
@@ -96,11 +98,17 @@ for (let i in assignments) {
 */
 
 // forEach
-
+/*
 assignments.forEach((assignment) => {
-    allAssignments.push(assignments);
+    allAssignments.push(assignment);
 })
 
+
+console.log({ allAssignments });
+console.log(assignments);
+*/
+let allAssignments = assignments.map((assignment) => assignment)
+console.log(allAssignments);
 
 /**
 
